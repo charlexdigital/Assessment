@@ -39,12 +39,12 @@ function ContactInfo() {
           <h4 className="section-title">Opening Hours</h4>
           <p><b>Mon - Fri:</b> 9:00 AM - 6:00 PM</p>
         </Col>
-
+        {/*AIzaSyCQMt_ t4I5w4UERY __ Q34q8c0kqZxdje3o*/}
         {/* Location Map Section */}
         <Col md={6} className="map-container p-0" data-aos="fade-right">
           <h4 className="section-title text-center mb-3">Our Location</h4>
           <iframe
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCQMt_t4I5w4UERY__Q34q8c0kqZxdje3o&q=128+Inkerman+St,+St+Kilda+VIC+3182"
+            src="https://www.google.com/maps/embed/v1/place?key=HEREISMYAPI&q=128+Inkerman+St,+St+Kilda+VIC+3182"
             width="100%"
             height="600"
             style={{ border: 0 }}
