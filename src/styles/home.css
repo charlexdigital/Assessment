@@ -1,0 +1,7 @@
+.component-with-shadow {
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.9); /* Stronger shadow */  margin-bottom: -5px; /* Pulls the component up to overlap with the next component */
+  border-radius: 8px;  /* Optional: To add rounded corners to the shadow */
+  background-color: #fff; /* Ensure a white background to avoid lines */
+  padding: 20px; /* Optional: Add padding for content spacing */
+  overflow: hidden; /* Prevents content from overflowing and causing visual glitches */
+}

@@ -1,0 +1,17 @@
+/* src/components/Footer.css */
+
+.footer {
+      background-color: #3D2100; /* Dark background */
+      color: white; /* White text */
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .footer-logo-img {
+      max-width: 150px; /* Adjust the logo size */
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline; /* Add hover effect */
+    }
+    

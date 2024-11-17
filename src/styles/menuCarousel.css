@@ -1,0 +1,205 @@
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Carousel Styles */
+.slick-slider {
+  margin-bottom: 50px;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+  background-color: #007bff; /* Blue background for the carousel item */
+
+}
+
+.card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white; /* White color for title text */
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.card-title:hover {
+  color: #ffcc00; /* A highlight color for the title */
+  cursor: pointer;
+}
+
+/* Carousel Controls */
+.slick-prev, .slick-next {
+  font-size: 2rem;
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  cursor: pointer;
+}
+
+/* Left and Right Title/Arrows Layout */
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carousel-header .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.carousel-header .arrows {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+/* Menu Item Styles */
+.menu-items {
+  padding-top: 50px;
+}
+
+.menu-items h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  border-radius: 0; /* No border radius for menu images */
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #007bff; /* Blue background for menu items */
+  border-radius: 10px;
+}
+
+.card-body p {
+  color: white; /* White color for description text */
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00; /* Highlighted price color */
+  margin-top: 10px;
+}
+
+.tags {
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Close Button */
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-slide {
+    padding: 5px;
+  }
+
+  .menu-items h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-body {
+    padding: 8px;
+  }
+}
+
+/* Hide slick default arrows */
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+/* Optional: Styling the custom arrows */
+.arrow-icon {
+  cursor: pointer;
+  color: #333;
+}
+
+.arrow-icon:hover {
+  color: #007bff;
+}
+
+/* Styling the close icon */
+.close-icon {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.close-icon:hover {
+  color: #cc0000;
+}
+
+/* For Category Images - Circular */
+.category-img {
+  width: 100%;
+  border-radius: 50%; /* Circular */
+}
+
+/* For Menu Item Images - Square */
+.menu-img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}

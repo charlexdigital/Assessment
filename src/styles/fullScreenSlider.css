@@ -1,0 +1,99 @@
+/* Fullscreen slider styles */
+#fullscreen-slider .carousel-item {
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat to navbar */
+      height: 100vh; /* Full screen height */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: zoomIn 20s ease-in-out infinite; /* Zoom effect */
+      transition: opacity 1s ease-in-out, transform 1.9s ease-in-out; /* Smooth transition effect */
+    }
+    
+    #fullscreen-slider .carousel-item.active {
+      animation: zoomIn 16s ease-in-out; /* Zoom effect on active slide */
+    }
+    
+    #fullscreen-slider .carousel-item-next,
+    #fullscreen-slider .carousel-item-prev {
+      transform: translateX(0); /* Avoid jerky transitions */
+    }
+    
+    /* Zoom animation */
+    @keyframes zoomIn {
+      0% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1.45);
+      }
+    }
+    
+    .slider-item {
+      height: 100%;
+      position: relative;
+    }
+    
+    .slider-item .text-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    }
+    
+    .slider-item h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding: 10px;
+      }
+    
+    .slider-item p {
+      padding: 10px;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      background-color: rgba(48, 24, 1, 0.8); /* #301801 with 80% opacity */
+      backdrop-filter: blur(5px); /* Optional: Adds a blur effect for a modern look */
+    }
+    
+    .slider-item .btn {
+      font-size: 1.2rem;
+      padding: 10px 30px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .slider-item .btn:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-slide {
+      height: 100vh; /* Full viewport height */
+      background-size: cover; /* Ensure the background image covers the entire section */
+      background-position: center; /* Center the background image */
+      position: relative; /* Position for overlay and text */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .carousel-item {
+      height: 100%; /* Ensure carousel items take full height */
+    }
+    
+    .carousel-inner {
+      height: 100%; /* Ensure the inner container takes up full height */
+    }
+    
+    /* Overlay with opacity */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+      z-index: 1; /* Overlay sits below the text */
+      opacity: 0;
+      transition: opacity 2s ease; /* Smooth transition for fade-in */
+    }
+    

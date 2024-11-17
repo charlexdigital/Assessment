@@ -1,0 +1,242 @@
+/* General */
+.bg-brown {
+  background-image: url('../../public/images/bg-form.jpg');
+  background-size: cover; 
+  background-position: center;
+}
+
+.about-section {
+  padding: 80px 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-who {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.title-who::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #3D2100;
+  border-radius: 2px;
+}
+
+.about-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: bold;
+}
+
+.about-section p, .about-section ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666;
+}
+
+.about-section img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Accordion */
+.accordion, .accordion-button:not(.collapsed)::after {
+  --bs-accordion-btn-icon: none !important;
+  background: none;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.accordion-button {
+  background-color: transparent;
+  color: #3D2100 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+}
+
+.accordion-button::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: auto;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+  content: '-'; 
+  transform: rotate(0deg);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #f1f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header button {
+  background: none !important;
+  color: #3D2100 !important;
+}
+
+/* Gallery Section */
+.gallery-section {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.gallery-section .img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-section .img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 40px 15px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-feedback {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.star-rating {
+  font-size: 1.5rem; 
+  color: #ffcc00;  
+}
+
+.star-rating .star.filled {
+  color: #ffcc00;  
+}
+
+.star-rating .star {
+  margin: 0 2px;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+
+  .title-who {
+    font-size: 2rem;
+  }
+
+  .accordion-button {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+  }
+
+  .title-who {
+    font-size: 1.75rem;
+  }
+
+  .about-section h4 {
+    font-size: 1.25rem;
+  }
+
+  .gallery-section .img-fluid {
+    width: 100%; 
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 30px 10px;
+  }
+
+  .title-who {
+    font-size: 1.5rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .testimonial-card {
+    padding: 10px;
+  }
+
+  .star-rating {
+    font-size: 1.2rem; 
+  }
+}

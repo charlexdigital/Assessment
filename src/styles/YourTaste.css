@@ -1,0 +1,96 @@
+/* YourTaste Component Styles */
+.yourtaste-container {
+      padding: 40px;
+      background-color: #f8f9fa;
+    }
+    
+    .yourtaste-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .yourtaste-description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    
+    .search-bar {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .search-input {
+      padding: 15px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      border: 2px solid #007bff;
+    }
+    
+    .search-input:focus {
+      border-color: #0056b3;
+    }
+    
+    .btn-primary {
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+    }
+    
+    .card-img-top {
+      border-radius: 0;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .card-body {
+      background-color: #007bff;
+      border-radius: 10px;
+    }
+    
+    .card-body h5 {
+      font-size: 1.2rem;
+      color: white;
+    }
+    
+    .card-body p {
+      color: white;
+      font-size: 0.9rem;
+    }
+    
+    .tags {
+      color: #ffcc00;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+    
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+    
+    .row {
+      margin-top: 20px;
+    }
+    
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    
+    .search-input {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .btn-primary {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }

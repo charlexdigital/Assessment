@@ -1,0 +1,77 @@
+.form-section {
+      background-image: url('../../public/images/bg-form.jpg');
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+    }
+   
+    
+    .form-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    .form-description {
+      font-size: 1rem;
+      color: #666;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .shadow-container {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .form-description {
+      color: #555;
+    }
+    
+    .focused-label {
+      font-weight: bold;
+      color: #fbc900;
+    }
+    
+    .form-control:focus {
+      border-color: #fbc900;
+      box-shadow: none;
+    }
+    
+    button {
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    button svg {
+      font-size: 1.2rem;
+    }
+    button {
+      background-color: #3D2100 !important;
+      border: none !important;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #2F1800; /* Slightly darker shade for hover effect */
+    }
+    
+    button:focus {
+      box-shadow: 0 0 0 0.2rem rgba(61, 33, 0, 0.5); /* Subtle focus outline */
+    }

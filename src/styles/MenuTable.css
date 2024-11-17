@@ -1,0 +1,91 @@
+/* MenuTable.css */
+.menu-table-container {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    
+    .menu-items-list {
+      margin-top: 20px;
+    }
+    
+    .menu-table {
+      background-color: #fff;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu-table th {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .menu-table td {
+      text-align: center;
+      padding: 12px 15px;
+    }
+    
+    .category-row td {
+      background-color: #f1f1f1;
+      font-weight: bold;
+    }
+    
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .menu-item-image {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    
+    .quantity-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .btn-secondary {
+      background-color: #6c757d;
+      border: none;
+    }
+    
+    .add-to-order-btn {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s;
+    }
+    
+    .add-to-order-btn:hover {
+      background-color: #218838;
+    }
+    
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    
+    table tbody tr {
+      transition: background-color 0.2s;
+    }
+    
+    table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+    
+    h3 {
+      font-size: 1.2rem;
+      color: #007bff;
+      margin: 10px 0;
+    }
+    

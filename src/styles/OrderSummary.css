@@ -1,0 +1,34 @@
+/* OrderSummary.css */
+.order-summary {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .order-summary table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .order-summary th, .order-summary td {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .order-summary th {
+      background-color: #007bff;
+      color: white;
+    }
+    
+    .total {
+      text-align: right;
+      margin-top: 20px;
+    }
+    
+    .total h3 {
+      font-size: 24px;
+      color: #007bff;
+      font-weight: bold;
+    }
+    
